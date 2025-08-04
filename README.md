@@ -2,12 +2,6 @@
 
 An intelligent web application that uses advanced deep learning models to classify whether an uploaded image contains a dog or cat. Built with modern web technologies and powered by Hugging Face Transformers running directly in your browser.
 
-## 🚀 Live Application
-
-<!-- Replace this with your actual deployed app URL -->
-<!-- [View Live Demo](https://your-app-url-here.com) -->
-*Deploy your app and add the live link here*
-
 ## ✨ Features
 
 - **🧠 AI-Powered Classification**: Uses Microsoft ResNet-50 neural network for accurate pet detection
