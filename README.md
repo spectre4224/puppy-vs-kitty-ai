@@ -4,7 +4,9 @@ An intelligent web application that uses advanced deep learning models to classi
 
 ## 🚀 Live Application
 
-[View Live Demo](https://your-app-url-here.com)
+<!-- Replace this with your actual deployed app URL -->
+<!-- [View Live Demo](https://your-app-url-here.com) -->
+*Deploy your app and add the live link here*
 
 ## ✨ Features
 
