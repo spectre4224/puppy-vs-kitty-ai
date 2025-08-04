@@ -1,73 +1,119 @@
-# Welcome to your Lovable project
+# 🐕🐱 AI Pet Classifier
 
-## Project info
+An intelligent web application that uses advanced deep learning models to classify whether an uploaded image contains a dog or cat. Built with modern web technologies and powered by Hugging Face Transformers running directly in your browser.
 
-**URL**: https://lovable.dev/projects/137d5fc3-be1c-4e63-88a8-0db2c50fb93a
+## 🚀 Live Application
 
-## How can I edit this code?
+[View Live Demo](https://your-app-url-here.com)
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- **🧠 AI-Powered Classification**: Uses Microsoft ResNet-50 neural network for accurate pet detection
+- **🖼️ Smart Image Processing**: Automatic image resizing and optimization for optimal AI performance
+- **📊 Confidence Scoring**: Detailed analysis with percentage confidence levels
+- **🎨 Beautiful UI**: Modern, responsive design with smooth animations and gradients
+- **⚡ Real-time Processing**: Fast classification powered by WebGPU acceleration
+- **📱 Mobile Friendly**: Fully responsive design that works on all devices
+- **🔄 Drag & Drop**: Intuitive file upload with drag and drop support
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/137d5fc3-be1c-4e63-88a8-0db2c50fb93a) and start prompting.
+## 🛠️ Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: shadcn/ui component library
+- **AI/ML**: Hugging Face Transformers.js
+- **Build Tool**: Vite
+- **File Handling**: react-dropzone
+- **Notifications**: Sonner toast library
+- **Icons**: Lucide React
 
-**Use your preferred IDE**
+## 🚀 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js 18+ and npm installed
+- Modern web browser with WebGPU support (recommended)
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd puppy-vs-kitty-ai
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Building for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The built files will be in the `dist` directory, ready for deployment.
 
-## What technologies are used for this project?
+## 🎯 How It Works
 
-This project is built with:
+1. **Image Upload**: Users can drag and drop or click to upload pet images
+2. **AI Processing**: The image is processed by a ResNet-50 model trained on ImageNet
+3. **Classification**: Smart keyword matching determines if the image contains a dog or cat
+4. **Results Display**: Beautiful visualization shows the prediction with confidence scores
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🧠 AI Model Details
 
-## How can I deploy this project?
+- **Model**: Microsoft ResNet-50 (image classification)
+- **Performance**: WebGPU acceleration when available, CPU fallback
+- **Processing**: Automatic image resizing to 512px for optimal performance
+- **Keywords**: Trained recognition of 20+ dog breeds and cat types
 
-Simply open [Lovable](https://lovable.dev/projects/137d5fc3-be1c-4e63-88a8-0db2c50fb93a) and click on Share -> Publish.
+## 🎨 Design System
 
-## Can I connect a custom domain to my Lovable project?
+The application features a custom design system with:
+- Warm, pet-themed color palette
+- Dog-specific orange gradients
+- Cat-specific purple gradients
+- Smooth animations and hover effects
+- Semantic color tokens for consistency
 
-Yes, you can!
+## 📁 Project Structure
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # shadcn/ui components
+│   ├── ImageUpload.tsx  # File upload component
+│   └── ClassificationResult.tsx  # Results display
+├── services/            # AI and API services
+│   └── aiClassifier.ts  # AI classification logic
+├── assets/              # Images and static files
+├── pages/               # Route components
+└── lib/                 # Utility functions
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Hugging Face for the Transformers.js library
+- Microsoft for the ResNet-50 model
+- The open-source community for the amazing tools and libraries
